@@ -1,4 +1,4 @@
-```markdown
+
 # Uncertainty Routing in Instruction-Tuned LMs
 
 This repo contains experiments probing how an instruction-tuned language model represents “answerability” and routes that internal signal into either a direct answer or an explicit abstention (e.g., “UNCERTAIN”). The focus is mechanistic: localizing where the decision is formed, testing causal leverage across depth, and identifying high-impact attention components that control the final routing behavior.
@@ -49,4 +49,4 @@ This repo is currently organized as research notebooks/scripts. Typical workflow
 
 ## Citation
 If you use ideas or code from this repo, please cite the associated writeup (link TBD).
-```
+
