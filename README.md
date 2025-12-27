@@ -1,7 +1,7 @@
 
 # Uncertainty Routing in Instruction-Tuned LMs
 
-This repo contains experiments probing how an instruction-tuned language model represents “answerability” and routes that internal signal into either a direct answer or an explicit abstention (e.g., “UNCERTAIN”). The focus is mechanistic: localizing where the decision is formed, testing causal leverage across depth, and identifying high-impact attention components that control the final routing behavior.
+This repo contains experiments probing how an instruction-tuned language model represents “answerability” and routes that internal signal into either a direct answer or an explicit abstention (e.g., “UNCERTAIN”). The focus is mechanistic: localizing where the decision is formed, testing causal leverage across depth, and identifying high-impact attention components that control the final routing behavior. (Readme generated with help from LLMs).
 
 ## Core idea
 Uncertainty and abstention are often treated as the same thing (high uncertainty ⇒ abstain). In practice, they can decouple: a model can be internally uncertain yet still answer, or abstain even when token-level uncertainty looks low. This project studies the internal computation that turns “answerability evidence” into a discrete answer vs abstain decision.
@@ -40,7 +40,6 @@ This repo is currently organized as research notebooks/scripts. Typical workflow
 4. Run localization (probes, layerwise patching), then steering/component splits.
 5. Run head ablation + head patching with controls.
 
-> If you’re trying to reproduce a specific figure/result, start from the activation patching sweep and steering notebooks, then follow the head-level sections.
 
 ## Notes / limitations
 - Many flip results are most visible on borderline examples (small base margin).
